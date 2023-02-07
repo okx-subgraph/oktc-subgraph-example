@@ -1,0 +1,23 @@
+type Submit @entity {
+    id: ID!
+    from: String!
+    amount: BigInt!
+    createdAtBlockNumber: BigInt!
+}
+
+type Block @entity {
+  id: ID!
+  parentHash: Bytes!
+  unclesHash: Bytes!
+  author: Bytes!
+  stateRoot: Bytes!
+  transactionsRoot: Bytes!
+  receiptsRoot: Bytes!
+  number: BigInt!
+  gasUsed: BigInt!
+  gasLimit: BigInt!
+  timestamp: BigInt!
+  difficulty: BigInt!
+  totalDifficulty: BigInt!
+  size: BigInt
+}

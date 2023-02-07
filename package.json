@@ -1,0 +1,26 @@
+{
+  "name": "okc-subgraph-example",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph build",
+    "remove": "graph remove subgraph-example --node http://127.0.0.1:7003",
+    "create": "graph create subgraph-example --node http://127.0.0.1:7003",
+    "deploy": "graph deploy subgraph-example --ipfs http://127.0.0.1:7004 --node http://127.0.0.1:7003"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@graphprotocol/graph-cli": "^0.20.1",
+    "@graphprotocol/graph-ts": "^0.20.1",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "npm": "^7.20.5"
+  }
+}
