@@ -4,9 +4,9 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "remove": "graph remove subgraph-example --node http://127.0.0.1:7003",
-    "create": "graph create subgraph-example --node http://127.0.0.1:7003",
-    "deploy": "graph deploy subgraph-example --ipfs http://127.0.0.1:7004 --node http://127.0.0.1:7003"
+    "remove": "graph remove subgraph-example-v2 --node http://127.0.0.1:8842",
+    "create": "graph create subgraph-example-v2 --node http://127.0.0.1:8842",
+    "deploy": "graph deploy subgraph-example-v2 --ipfs http://localhost:8882 --node http://127.0.0.1:8842"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",

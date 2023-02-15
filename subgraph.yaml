@@ -1,6 +1,6 @@
 specVersion: 0.0.4
 description: Indexing all OEC Block data
-repository: https://gitlab.okg.com/dapp/okc/okc-galxe-subgraph-staking
+repository: https://github.com/okc-subgraph/subgraph-example
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,7 +8,7 @@ dataSources:
     name: Submit
     network: okc
     source:
-      address: "0x97B05e6C5026D5480c4B6576A8699866eb58003b"
+      address: "0x97B05e6C5026D5480c4B6576A8699866eb58004b"
       abi: StOKT
       startBlock: 16600940
     mapping:
