@@ -132,11 +132,12 @@ Each entity must have an `id` field, which must be of type `Bytes!` or `String!`
 
 For some entity types the `id` is constructed from the id's of two other entities; that is possible using `concat`, e.g., `let id = left.id.concat(right.id) `to form the id from the id's of `left` and `right`. Similarly, to construct an id from the id of an existing entity and a counter `count`, `let id = left.id.concatI32(count)` can be used. The concatenation is guaranteed to produce unique id's as long as the length of `left` is the same for all such entities, for example, because `left.id` is an `Address`.
 
-### **Built-in scalar type**
+**Built-in scalar type**
 
 We support the following scalars in our GraphQL API:
 
-![image-20230215170713313](/Users/oker/Library/Application Support/typora-user-images/image-20230215170713313.png)
+![img](https://okg-block.larksuite.com/space/api/box/stream/download/asynccode/?code=ZGNmMGRlYzVkM2JmYWUzOTQ5MTMzZGQyMDliN2Y0ODNfcnllUFd3QURDU2VuSTYwaE83Q0ZORVl3NjVuZzYyVE1fVG9rZW46Ym94dXNiUDhKZmpFZHdJMGduOXhtQ3drNnllXzE2NzY0NTMxNDE6MTY3NjQ1Njc0MV9WNA)
+
 
 ## **write mapping**
 
