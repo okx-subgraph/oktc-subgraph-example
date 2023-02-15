@@ -1,6 +1,6 @@
 # development manual
 
-1. ## **overview**
+## **overview**
 
 Before subgraph code development, you need to install the [Graph CLI ](https://github.com/graphprotocol/graph-cli)to build and deploy subgraphs. (Please specify version 0.20.1)
 
@@ -21,7 +21,7 @@ A qualified subgraph project code should include the following files or director
 
 Below we will describe the development details of these files in detail
 
-1. ## **The Subgraph Manifest**
+## **The Subgraph Manifest**
 
 The subgraph manifest `subgraph.yaml` defines the smart contracts your subgraph indexes, which events from these contracts to pay attention to, and how to map event data to entities that Graph Node stores and allows to query. The full specification for subgraph manifests can be found [here](https://github.com/graphprotocol/graph-node/blob/master/docs/subgraph-manifest.md).
 
@@ -80,7 +80,7 @@ The triggers for a data source within a block are ordered using the following pr
 
 These ordering rules are subject to change.
 
-1. ## **Get ABI**
+## **Get ABI**
 
 ABI file must match your contract. There are several ways to get an ABI file:
 
@@ -88,13 +88,13 @@ ABI file must match your contract. There are several ways to get an ABI file:
 - If you are building a subgraph for a public project, you can download the project to your computer and get ABI by using `truffle compile `, or by using solc for compilation.
 - You can also find ABI on [OKLink ](https://www.oklink.com/en), but this is not always reliable because the ABI uploaded there may be out of date. Make sure you have the correct ABI or your subgraph will fail to run.
 
-1. ## **Defining Entities**
+## **Defining Entities**
 
 All queries will be made against the data model defined in the subgraph schema and the entities indexed by the subgraph. Because of this, it is good to define the subgraph schema in a way that matches the needs of your dapp. It may be useful to imagine entities as "objects containing data", rather than as events or functions.
 
 With The Graph, you simply define entity types in `schema.graphql`, and Graph Node will generate top level fields for querying single instances and collections of that entity type. Each type that should be an entity is required to be annotated with an `@entity` directive. By default, entities are mutable, meaning that mappings can load existing entities, modify them and store a new version of that entity. Mutability comes at a price, and for entity types for which it is known that they will never be modified, for example, because they simply contain data extracted verbatim from the chain, it is recommended to mark them as immutable with `@entity(immutable: true)`. Mappings can make changes to immutable entities as long as those changes happen in the same block in which the entity was created. Immutable entities are much faster to write and to query, and should therefore be used whenever possible.
 
-1. ### **Examples of good code**
+### **Examples of good code**
 
 The following `Submit` entities are built around Gravatar objects and are a good example of how to define an entity.
 
@@ -107,7 +107,7 @@ type Submit @entity {
 }
 ```
 
-1. ### **Examples of bad code**
+### **Examples of bad code**
 
 In the following example, `SubmitHandler` entities are event-based. It is not recommended to map events or function calls 1:1 to entities.
 
@@ -120,7 +120,7 @@ type SubmitHandler @entity {
 }
 ```
 
-1. ### **Optional and Required Fields**
+### **Optional and Required Fields**
 
 Entity fields can be defined as required or optional. Required fields are indicated by the `!` in the schema. If a required field is not set in the mapping, you will receive this error when querying the field:
 
@@ -132,13 +132,13 @@ Each entity must have an `id` field, which must be of type `Bytes!` or `String!`
 
 For some entity types the `id` is constructed from the id's of two other entities; that is possible using `concat`, e.g., `let id = left.id.concat(right.id) `to form the id from the id's of `left` and `right`. Similarly, to construct an id from the id of an existing entity and a counter `count`, `let id = left.id.concatI32(count)` can be used. The concatenation is guaranteed to produce unique id's as long as the length of `left` is the same for all such entities, for example, because `left.id` is an `Address`.
 
-1. ### **Built-in scalar type**
+### **Built-in scalar type**
 
 We support the following scalars in our GraphQL API:
 
 ![image-20230215170713313](/Users/oker/Library/Application Support/typora-user-images/image-20230215170713313.png)
 
-1. ## **write mapping**
+## **write mapping**
 
 Mappings convert your event data into entities defined in your schema. Mappings are written in a subset of TypeScript called AssemblyScript, which can be compiled as WASM (WebAssembly). AssemblyScript is stricter than regular TypeScript, but provides a familiar syntax.
 
@@ -166,7 +166,7 @@ export function handleSubmit(event: SubmitEvent): void {
 
 The handler attempts to load an existing Submit from the Graph Node store. If it doesn't already exist, it will be created on demand. The entity is then updated to match the new event parameters and saved with submitEntity.save ().
 
-1. ### **Recommended ID for creating new entities**
+### **Recommended ID for creating new entities**
 
 Every entity has to have an `id` that is unique among all entities of the same type. An entity's `id` value is set when the entity is created. Below are some recommended `id` values to consider when creating new entities. NOTE: The value of `id` must be `string`.
 
@@ -176,9 +176,9 @@ Every entity has to have an `id` that is unique among all entities of the same t
 
 We provide the [Graph Typescript Library](https://github.com/graphprotocol/graph-ts) which contains utilies for interacting with the Graph Node store and conveniences for handling smart contract data and entities. You can use this library in your mappings by importing `@graphprotocol/graph-ts` in `mapping.ts`.
 
-1. ## **other**
+## **other**
 
-1. ### **code generation**
+### **code generation**
 
 In order to make it easy and type-safe to work with smart contracts, events and entities, the Graph CLI can generate AssemblyScript types from the subgraph's GraphQL schema and the contract ABIs included in the data sources.
 
