@@ -57,7 +57,7 @@ After the subgraph is deployed, it takes some time to synchronize the block heig
 - Query URL ：https://www.okx.com/okc/subgraph-hosted/name/<Subgraph_name>
 - Query Playground：https://www.okx.com/okc/subgraph-hosted/name/<Subgraph_name>/graphql
 
-Please replace <Subgraph_name> in the example with your own Subgraph name
+Please replace `<Subgraph_name>` in the example with your own Subgraph name
 
 ## Example
 
