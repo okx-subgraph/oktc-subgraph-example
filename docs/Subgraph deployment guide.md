@@ -6,7 +6,7 @@ By deploying the subgraph, you can explore the subgraph GraphQL API by issuing q
 
 OKC Subgraph currently provides the Hosted Service. If you want to deploy a subgraph on it, please send your application to  [subgraph@okx.com](mailto:subgraph@okx.com), and provide the information below:
 
-| **I****nformation**                                          | **Sample**                                  |
+| **Information**                                          | **Sample**                                  |
 | ------------------------------------------------------------ | ------------------------------------------- |
 | Name of project                                              | OKC Test Project                            |
 | Official website (if any)                                    | https://okctestproject.io/                  |
@@ -34,7 +34,7 @@ Refer to https://github.com/okc-subgraph/subgraph-example/blob/main/docs/Develop
 
 ### Block height requirement
 
-- The query block height can't be lower than 1,340,000
+- The query block height can't be lower than 13,400,000
 - Sample：https://github.com/okc-subgraph/subgraph-example
 
 ## Upload Subgraph code to Github
