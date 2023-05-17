@@ -18,7 +18,7 @@ OKC Subgraph currently provides the Hosted Service. If you want to deploy a subg
 | Way of contacting you (please provide Telegram account and email) | @okctestproject                             |
 | Expected subgraph name                                       | okctestproject-statistics-v1                |
 
-# How to deploy Subgraph
+# How to deploy OKTC Subgraph
 
 ## Develop Subgraph
 
@@ -52,7 +52,7 @@ OKC will help you with the deployment
 
 After the subgraph is deployed, it takes some time to synchronize the block height before it can be queried.
 
-# How to query the Graph
+# Sample Queries
 
 - Query URL ：https://www.okx.com/okc/subgraph-hosted/name/<Subgraph_name>
 - Query Playground：https://www.okx.com/okc/subgraph-hosted/name/<Subgraph_name>/graphql
