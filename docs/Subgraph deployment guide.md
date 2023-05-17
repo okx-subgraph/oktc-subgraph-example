@@ -172,15 +172,15 @@ Using Graph Explorer will help you query data more easily
 
 1. Click "Explorer" in the upper left corner to expand
 
-![img](https://okg-block.larksuite.com/space/api/box/stream/download/asynccode/?code=NGM5MDRiOTIyOWY2ZjdjYzE0ZTAyYWQ1YjU0ZGU5ODFfWm4yN1Jqb3I3dUVGSjRZTEVMQmFTdndmVkxIZkpHb2pfVG9rZW46Ym94dXNYZzRXTWlUVzBKVFNXaGJ0Rmg3NlhiXzE2NzY0NTE0ODk6MTY3NjQ1NTA4OV9WNA)
+![img](https://github.com/okc-subgraph/subgraph-example/blob/main/docs/images/Explorer.png)
 
 2. Select the query entity and filter
 
-![img](https://okg-block.larksuite.com/space/api/box/stream/download/asynccode/?code=ZTkyOGQ3YTVkNDdlYzgyZmRlZjMyZDJlYzUwM2YzMzZfRHczNkZRRElIMWh1R1lKdUNETnJlV0hJazRMSVJGc0JfVG9rZW46Ym94dXNKSUo0RHRkS21SUjg1UUJGOGlBRkRoXzE2NzY0NTE0ODk6MTY3NjQ1NTA4OV9WNA)
+![img](https://github.com/okc-subgraph/subgraph-example/blob/main/docs/images/Filter.png)
 
 3. Click this button to get results
 
-![img](https://okg-block.larksuite.com/space/api/box/stream/download/asynccode/?code=YjA1ODI3NmNiYWQwZTU5MjU1NTBjMWI2MmRkZTNmY2Nfb1o2S3dUdkdJaXMxVVE3VDNSNWtMbXl5VnZjaUVEOWVfVG9rZW46Ym94dXNIN2lnc1RqaldaMUsyR09wYm42cDhmXzE2NzY0NTE0ODk6MTY3NjQ1NTA4OV9WNA)
+![img](https://github.com/okc-subgraph/subgraph-example/blob/main/docs/images/query.png)
 
 ### more
 
