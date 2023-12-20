@@ -161,26 +161,6 @@ query GetInfo {
 }
 ```
 
-### Graph Explorer
-
-Using Graph Explorer will help you query data more easily
-
-1. Click "Explorer" in the upper left corner to expand
-
-![img](https://github.com/okc-subgraph/subgraph-example/blob/main/docs/images/Explorer.png)
-
-2. Select the query entity and filter
-
-![img](https://github.com/okc-subgraph/subgraph-example/blob/main/docs/images/Filter.png)
-
-3. Click this button to get results
-
-![img](https://github.com/okc-subgraph/subgraph-example/blob/main/docs/images/query.png)
-
-### more
-
-Query from the application can refer to: https://thegraph.com/docs/zh/querying/querying-from-an-application/
-
 # FAQ
 
 ## What is a subgraph?
@@ -192,8 +172,6 @@ A subgraph is a custom API built on blockchain data. Subgraphs are queried using
 - "@graphprotocol/graph-cli": "^0.20.1"
 - "@graphprotocol/graph-ts": "^0.20.1"
 - "npm": "^7.20.5"
-
-For more code specifications, refer to https://github.com/okc-subgraph/subgraph-example/blob/main/docs/Developing.md
 
 ## Is it possible to deploy subgraphs with the same name？
 

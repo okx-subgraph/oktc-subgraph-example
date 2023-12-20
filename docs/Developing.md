@@ -30,7 +30,7 @@ For example subgraph, `subgraph.yaml` is:
 ```TypeScript
 specVersion: 0.0.4
 description: Indexing all OEC Block data
-repository: https://github.com/okc-subgraph/subgraph-example
+repository: https://github.com/okx-subgraph
 schema:
   file: ./schema.graphql
 dataSources:

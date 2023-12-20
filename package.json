@@ -1,5 +1,5 @@
 {
-  "name": "okc-subgraph-example",
+  "name": "oktc-subgraph-example",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
