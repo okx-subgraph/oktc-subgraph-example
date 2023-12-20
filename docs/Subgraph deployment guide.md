@@ -22,10 +22,6 @@ OKC Subgraph currently provides the Hosted Service. If you want to deploy a subg
 
 ## Develop Subgraph
 
-### Code specification
-
-Refer to https://github.com/okc-subgraph/subgraph-example/blob/main/docs/Developing.md
-
 ### Version requirement
 
 -  "@graphprotocol/graph-cli": "^0.20.1"
@@ -35,7 +31,6 @@ Refer to https://github.com/okc-subgraph/subgraph-example/blob/main/docs/Develop
 ### Block height requirement
 
 - The query block height can't be lower than 13,400,000
-- Sample：https://github.com/okc-subgraph/subgraph-example
 
 ## Upload Subgraph code to Github
 
